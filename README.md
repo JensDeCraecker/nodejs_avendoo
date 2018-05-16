@@ -1,4 +1,4 @@
-# Node.js boilerplate
+# Node.js Avendoo
 
 This API handles X
 

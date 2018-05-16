@@ -1,0 +1,14 @@
+version: '2'
+services:
+  postgres:
+    image: sameersbn/postgresql
+    ports:
+    - "5432:5432"
+    environment:
+      - PG_PASSWORD=developer
+      - DB_USER=developer
+      - DB_PASS=developer
+      - DB_NAME=avendoo
+      - DB_EXTENSION=btree_gist
+    volumes:
+      - ./data/postgres:/var/lib/postgresql
